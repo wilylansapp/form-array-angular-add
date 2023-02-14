@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<div class="periodecycle-container">
+  <div [formGroup]="orderForm" class="allforms-container">
+    <div
+      formArrayName="datesPhase"
+      *ngFor="let item of orderForm.get('datesPhase').controls; let i = index"
+    >
+      <div class="form-items-container" [formGroupName]="i">
+        <input formControlName="opex" placeholder="Item name" />
+        <input formControlName="rco" placeholder="Item description" />
+        <input formControlName="pomtn2" placeholder="Item price" />
+        <input formControlName="poiaenu" placeholder="Item name" />
+        <input formControlName="pomtn2" placeholder="Item description" />
+        <input formControlName="mcf" placeholder="Item price" />
+      </div>
+    </div>
+  </div>
+  <button (click)="addItem()">Add</button>
+</div>

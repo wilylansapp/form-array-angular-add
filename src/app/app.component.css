@@ -1,0 +1,21 @@
+p {
+  font-family: Lato;
+}
+
+.allforms-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.periodecycle-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
